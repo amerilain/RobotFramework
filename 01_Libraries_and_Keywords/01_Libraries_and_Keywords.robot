@@ -49,10 +49,11 @@ Check Address File Content
     Should Be Equal As Numbers    ${lines}    3
 
 *** Test Cases ***
-Remove Address File Test
+Remove Existing Address File Test
     Remove Existing Address File    ${ADDRESS_FILE}
 
-Create And Verify Address File
-    Remove Existing Address File    ${ADDRESS_FILE}
+Create New Address File Test
     Create New Address File
+
+Check Address File Content Test
     Check Address File Content
