@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.9.12 on darwin)" generated="2024-10-28T18:32:23.621715" rpa="false" schemaversion="5">
+<suite id="s1" name="Atcmd" source="/Users/amerilain/Documents/ICT_docs/3rd_year/Robot_Framework/Exercises/solutions/02_Data_driven_style/atcmd.robot">
+<test id="s1-t1" name="Connection Test" line="11">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.666096" elapsed="0.025228"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.691679" elapsed="0.000603"/>
+</kw>
+<arg>AT</arg>
+<arg>AT+SEND="AT"</arg>
+<status status="PASS" start="2024-10-28T18:32:23.665701" elapsed="0.026659"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.665263" elapsed="0.027235"/>
+</test>
+<test id="s1-t2" name="Only Letters" line="15">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.693150" elapsed="0.000135"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.693361" elapsed="0.001471"/>
+</kw>
+<arg>this is a test</arg>
+<arg>AT+SEND="THIS IS A TEST"</arg>
+<status status="PASS" start="2024-10-28T18:32:23.692924" elapsed="0.001952"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.692674" elapsed="0.002306"/>
+</test>
+<test id="s1-t3" name="Only Numbers" line="19">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.695566" elapsed="0.000120"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.695761" elapsed="0.001423"/>
+</kw>
+<arg>1234567890</arg>
+<arg>AT+SEND="1234567890"</arg>
+<status status="PASS" start="2024-10-28T18:32:23.695367" elapsed="0.001860"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.695140" elapsed="0.002191"/>
+</test>
+<test id="s1-t4" name="Mixed Letters and Numbers" line="23">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.697914" elapsed="0.000116"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.698105" elapsed="0.001264"/>
+</kw>
+<arg>test123test</arg>
+<arg>AT+SEND="TEST123TEST"</arg>
+<status status="PASS" start="2024-10-28T18:32:23.697711" elapsed="0.001705"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.697478" elapsed="0.002046"/>
+</test>
+<test id="s1-t5" name="Whitespace and Tabs" line="27">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.700155" elapsed="0.000120"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.700356" elapsed="0.001400"/>
+</kw>
+<arg>${WHITESPACE_TEXT}</arg>
+<arg>${EXPECTED_WHITESPACE_RESPONSE}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.699903" elapsed="0.001928"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.699669" elapsed="0.002280"/>
+</test>
+<test id="s1-t6" name="Special Characters" line="31">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.702614" elapsed="0.000141"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.702833" elapsed="0.001362"/>
+</kw>
+<arg>hello, world!</arg>
+<arg>AT+SEND="HELLOX WORLDX"</arg>
+<status status="PASS" start="2024-10-28T18:32:23.702382" elapsed="0.001865"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.702126" elapsed="0.002228"/>
+</test>
+<test id="s1-t7" name="Invalid Command" line="35">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.704941" elapsed="0.000218"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.705230" elapsed="0.001139"/>
+</kw>
+<arg>SEND+WRONG</arg>
+<arg>AT+SEND="SEND+WRONG"</arg>
+<status status="PASS" start="2024-10-28T18:32:23.704739" elapsed="0.001673"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.704507" elapsed="0.002004"/>
+</test>
+<test id="s1-t8" name="Unrecognized AT Command" line="39">
+<kw name="Send Text Template">
+<kw name="Send Text" owner="AtCommandLibrary">
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.707081" elapsed="0.000107"/>
+</kw>
+<kw name="Response Should Be" owner="AtCommandLibrary">
+<arg>${expected_response}</arg>
+<status status="PASS" start="2024-10-28T18:32:23.707256" elapsed="0.001145"/>
+</kw>
+<arg>AT+UNKNOWN</arg>
+<arg>AT+SEND="AT+UNKNOWN"</arg>
+<status status="PASS" start="2024-10-28T18:32:23.706892" elapsed="0.001561"/>
+</kw>
+<status status="PASS" start="2024-10-28T18:32:23.706649" elapsed="0.001921"/>
+</test>
+<doc>Data-driven tests for AT command communication with Raspberry Pi Pico</doc>
+<status status="PASS" start="2024-10-28T18:32:23.622540" elapsed="0.086340"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Atcmd">Atcmd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
