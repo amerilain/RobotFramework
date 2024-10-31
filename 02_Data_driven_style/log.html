@@ -2071,13 +2071,13 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,4,[],[1,0,86],[],[[5,0,0,[],[1,42,27],[[0,6,0,0,0,7,0,0,[1,43,27],[[0,8,9,0,0,10,0,0,[1,43,25],[]],[0,11,9,0,0,12,0,0,[1,69,1],[]]]]]],[13,0,0,[],[1,70,2],[[0,6,0,0,0,14,0,0,[1,70,2],[[0,8,9,0,0,10,0,0,[1,70,0],[]],[0,11,9,0,0,12,0,0,[1,70,1],[]]]]]],[15,0,0,[],[1,72,2],[[0,6,0,0,0,16,0,0,[1,72,2],[[0,8,9,0,0,10,0,0,[1,73,0],[]],[0,11,9,0,0,12,0,0,[1,73,1],[]]]]]],[17,0,0,[],[1,74,2],[[0,6,0,0,0,18,0,0,[1,75,2],[[0,8,9,0,0,10,0,0,[1,75,0],[]],[0,11,9,0,0,12,0,0,[1,75,1],[]]]]]],[19,0,0,[],[1,77,2],[[0,6,0,0,0,20,0,0,[1,77,2],[[0,8,9,0,0,10,0,0,[1,77,0],[]],[0,11,9,0,0,12,0,0,[1,77,1],[]]]]]],[21,0,0,[],[1,79,2],[[0,6,0,0,0,22,0,0,[1,79,2],[[0,8,9,0,0,10,0,0,[1,80,0],[]],[0,11,9,0,0,12,0,0,[1,80,1],[]]]]]],[23,0,0,[],[1,82,2],[[0,6,0,0,0,24,0,0,[1,82,2],[[0,8,9,0,0,10,0,0,[1,82,0],[]],[0,11,9,0,0,12,0,0,[1,82,1],[]]]]]],[25,0,0,[],[1,84,2],[[0,6,0,0,0,26,0,0,[1,84,2],[[0,8,9,0,0,10,0,0,[1,84,0],[]],[0,11,9,0,0,12,0,0,[1,84,1],[]]]]]]],[],[8,8,0,0]];
+window.output["suite"] = [1,2,3,4,[],[1,0,143],[],[[5,0,0,[],[1,37,13],[[0,6,0,0,0,7,0,0,[1,38,12],[[0,8,9,0,0,10,0,0,[1,38,11],[]],[0,11,9,0,0,12,0,0,[1,50,0],[]]]]]],[13,0,0,[],[1,50,14],[[0,6,0,0,0,14,0,0,[1,51,13],[[0,8,9,0,0,10,0,0,[1,51,12],[]],[0,11,9,0,0,12,0,0,[1,63,1],[]]]]]],[15,0,0,[],[1,65,13],[[0,6,0,0,0,16,0,0,[1,65,12],[[0,8,9,0,0,10,0,0,[1,65,11],[]],[0,11,9,0,0,12,0,0,[1,76,1],[]]]]]],[17,0,0,[],[1,77,13],[[0,6,0,0,0,18,0,0,[1,78,12],[[0,8,9,0,0,10,0,0,[1,78,11],[]],[0,11,9,0,0,12,0,0,[1,89,1],[]]]]]],[19,0,0,[],[1,90,13],[[0,6,0,0,0,20,0,0,[1,91,12],[[0,8,9,0,0,10,0,0,[1,91,11],[]],[0,11,9,0,0,12,0,0,[1,102,1],[]]]]]],[21,0,0,[],[1,103,13],[[0,6,0,0,0,22,0,0,[1,104,12],[[0,8,9,0,0,10,0,0,[1,104,11],[]],[0,11,9,0,0,12,0,0,[1,115,1],[]]]]]],[23,0,0,[],[1,116,12],[[0,6,0,0,0,24,0,0,[1,117,12],[[0,8,9,0,0,10,0,0,[1,117,10],[]],[0,11,9,0,0,12,0,0,[1,128,1],[]]]]]],[25,0,0,[],[1,129,13],[[0,6,0,0,0,26,0,0,[1,129,13],[[0,8,9,0,0,10,0,0,[1,130,11],[]],[0,11,9,0,0,12,0,0,[1,141,1],[]]]]]]],[],[8,8,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Atcmd","*/Users/amerilain/Documents/ICT_docs/3rd_year/Robot_Framework/Exercises/solutions/02_Data_driven_style/atcmd.robot","*atcmd.robot","*<p>Data-driven tests for AT command communication with Raspberry Pi Pico\x3c/p>","*Connection Test","*Send Text Template","*AT    AT+SEND=\"AT\"","*Send Text","*AtCommandLibrary","*${text}","*Response Should Be","*${expected_response}","*Only Letters","*this is a test    AT+SEND=\"THIS IS A TEST\"","*Only Numbers","*1234567890    AT+SEND=\"1234567890\"","*Mixed Letters and Numbers","*test123test    AT+SEND=\"TEST123TEST\"","*Whitespace and Tabs","*${WHITESPACE_TEXT}    ${EXPECTED_WHITESPACE_RESPONSE}","*Special Characters","*hello, world!    AT+SEND=\"HELLOX WORLDX\"","*Invalid Command","*SEND+WRONG    AT+SEND=\"SEND+WRONG\"","*Unrecognized AT Command","*AT+UNKNOWN    AT+SEND=\"AT+UNKNOWN\""]);
+window.output["strings"] = window.output["strings"].concat(["*","*Atcmd","*/Users/amerilain/Documents/ICT_docs/3rd_year/Robot_Framework/Exercises/solutions/02_Data_driven_style/atcmd.robot","*atcmd.robot","*<p>Data-driven tests for AT command communication with Raspberry Pi Pico\x3c/p>","*Connection Test","*Send Text Template","*AT    SENT=\"AT\"","*Send Text","*AtCommandLibrary","*${text}","*Response Should Be","*${expected_response}","*Only Letters","*this is a test    SENT=\"THIS IS A TEST\"","*Only Numbers","*1234567890    SENT=\"1234567890\"","*Mixed Letters and Numbers","*test123test    SENT=\"TEST123TEST\"","*Whitespace and Tabs","*${WHITESPACE_TEXT}    ${EXPECTED_WHITESPACE_RESPONSE}","*Special Characters","*hello, world!    SENT=\"HELLOX WORLDX\"","*Invalid Command","*SEND+WRONG    SENT=\"SENDXWRONG\"","*Unrecognized AT Command","*AT+UNKNOWN    SENT=\"ATXUNKNOWN\""]);
 </script>
 <script type="text/javascript">
 window.output["stats"] = [[{"elapsed":"00:00:00","fail":0,"label":"All Tests","pass":8,"skip":0}],[],[{"elapsed":"00:00:00","fail":0,"id":"s1","label":"Atcmd","name":"Atcmd","pass":8,"skip":0}]];
@@ -2086,10 +2086,10 @@ window.output["stats"] = [[{"elapsed":"00:00:00","fail":0,"label":"All Tests","p
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1730133143623;
+window.output["baseMillis"] = 1730363701233;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 91;
+window.output["generated"] = 147;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;

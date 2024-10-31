@@ -3,11 +3,11 @@ import re
 
 class AtCommandLibrary(object):
     ''' Library for interacting with a simple device using AT commands '''
-    ROBOT_LIBRARY_SCOPE = 'SUITE'
+    #ROBOT_LIBRARY_SCOPE = 'SUITE'
     
     def __init__(self):
         # Initialize the serial port connection with the correct port and baud rate
-        self.serial = serial.Serial('/dev/tty.usbmodem2101', 9600, timeout=1)
+        self.serial = serial.Serial('/dev/tty.usbmodem1101', 9600, timeout=1)
 
     def send_text(self, text):
         # Convert input text to uppercase and replace special characters with 'X',
