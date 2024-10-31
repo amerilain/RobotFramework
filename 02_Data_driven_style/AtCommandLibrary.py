@@ -3,7 +3,7 @@ import re
 
 class AtCommandLibrary(object):
     ''' Library for interacting with a simple device using AT commands '''
-    #ROBOT_LIBRARY_SCOPE = 'SUITE'
+    ROBOT_LIBRARY_SCOPE = 'SUITE'
     
     def __init__(self):
         # Initialize the serial port connection with the correct port and baud rate

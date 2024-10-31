@@ -2071,25 +2071,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,4,[],[1,0,143],[],[[5,0,0,[],[1,37,13],[[0,6,0,0,0,7,0,0,[1,38,12],[[0,8,9,0,0,10,0,0,[1,38,11],[]],[0,11,9,0,0,12,0,0,[1,50,0],[]]]]]],[13,0,0,[],[1,50,14],[[0,6,0,0,0,14,0,0,[1,51,13],[[0,8,9,0,0,10,0,0,[1,51,12],[]],[0,11,9,0,0,12,0,0,[1,63,1],[]]]]]],[15,0,0,[],[1,65,13],[[0,6,0,0,0,16,0,0,[1,65,12],[[0,8,9,0,0,10,0,0,[1,65,11],[]],[0,11,9,0,0,12,0,0,[1,76,1],[]]]]]],[17,0,0,[],[1,77,13],[[0,6,0,0,0,18,0,0,[1,78,12],[[0,8,9,0,0,10,0,0,[1,78,11],[]],[0,11,9,0,0,12,0,0,[1,89,1],[]]]]]],[19,0,0,[],[1,90,13],[[0,6,0,0,0,20,0,0,[1,91,12],[[0,8,9,0,0,10,0,0,[1,91,11],[]],[0,11,9,0,0,12,0,0,[1,102,1],[]]]]]],[21,0,0,[],[1,103,13],[[0,6,0,0,0,22,0,0,[1,104,12],[[0,8,9,0,0,10,0,0,[1,104,11],[]],[0,11,9,0,0,12,0,0,[1,115,1],[]]]]]],[23,0,0,[],[1,116,12],[[0,6,0,0,0,24,0,0,[1,117,12],[[0,8,9,0,0,10,0,0,[1,117,10],[]],[0,11,9,0,0,12,0,0,[1,128,1],[]]]]]],[25,0,0,[],[1,129,13],[[0,6,0,0,0,26,0,0,[1,129,13],[[0,8,9,0,0,10,0,0,[1,130,11],[]],[0,11,9,0,0,12,0,0,[1,141,1],[]]]]]]],[],[8,8,0,0]];
+window.output["suite"] = [1,2,3,4,[],[1,0,186],[],[[5,0,0,[],[1,102,26],[[0,6,0,0,0,7,0,0,[1,106,21],[[0,8,9,0,0,10,0,0,[1,110,13],[]],[0,11,9,0,0,12,0,0,[1,124,2],[]]]]]],[13,0,0,[],[1,130,9],[[0,6,0,0,0,14,0,0,[1,133,6],[[0,8,9,0,0,10,0,0,[1,135,1],[]],[0,11,9,0,0,12,0,0,[1,136,2],[]]]]]],[15,0,0,[],[1,140,8],[[0,6,0,0,0,16,0,0,[1,142,5],[[0,8,9,0,0,10,0,0,[1,144,1],[]],[0,11,9,0,0,12,0,0,[1,145,2],[]]]]]],[17,0,0,[],[1,149,8],[[0,6,0,0,0,18,0,0,[1,151,5],[[0,8,9,0,0,10,0,0,[1,153,1],[]],[0,11,9,0,0,12,0,0,[1,155,1],[]]]]]],[19,0,0,[],[1,159,8],[[0,6,0,0,0,20,0,0,[1,161,5],[[0,8,9,0,0,10,0,0,[1,163,1],[]],[0,11,9,0,0,12,0,0,[1,165,1],[]]]]]],[21,0,0,[],[1,170,12],[[0,6,0,0,0,22,0,0,[1,172,9],[[0,8,9,0,0,10,0,0,[1,173,1],[]],[0,11,9,0,0,12,0,0,[1,175,5],[]]]]]]],[],[6,6,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Atcmd","*/Users/amerilain/Documents/ICT_docs/3rd_year/Robot_Framework/Exercises/solutions/02_Data_driven_style/atcmd.robot","*atcmd.robot","*<p>Data-driven tests for AT command communication with Raspberry Pi Pico\x3c/p>","*Connection Test","*Send Text Template","*AT    SENT=\"AT\"","*Send Text","*AtCommandLibrary","*${text}","*Response Should Be","*${expected_response}","*Only Letters","*this is a test    SENT=\"THIS IS A TEST\"","*Only Numbers","*1234567890    SENT=\"1234567890\"","*Mixed Letters and Numbers","*test123test    SENT=\"TEST123TEST\"","*Whitespace and Tabs","*${WHITESPACE_TEXT}    ${EXPECTED_WHITESPACE_RESPONSE}","*Special Characters","*hello, world!    SENT=\"HELLOX WORLDX\"","*Invalid Command","*SEND+WRONG    SENT=\"SENDXWRONG\"","*Unrecognized AT Command","*AT+UNKNOWN    SENT=\"ATXUNKNOWN\""]);
+window.output["strings"] = window.output["strings"].concat(["*","*Atcmd","*/Users/amerilain/Documents/ICT_docs/3rd_year/Robot_Framework/Exercises/solutions/02_Data_driven_style/atcmd.robot","*atcmd.robot","*<p>Data-driven tests for AT command communication with Raspberry Pi Pico\x3c/p>","*Connection Test","*Send Text Template","*AT    AT","*Send Text","*AtCommandLibrary","*${text}","*Response Should Be","*SENT=\"${expected_response}\"","*Only Letters","*this is a test    THIS IS A TEST","*Only Numbers","*1234567890    1234567890","*Mixed Letters and Numbers","*test123test    TEST123TEST","*Whitespace and Tabs","*this${SPACE}is${SPACE}a${SPACE}test    THIS IS A TEST","*Special Characters","*hello, world!    HELLOX WORLDX"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:00","fail":0,"label":"All Tests","pass":8,"skip":0}],[],[{"elapsed":"00:00:00","fail":0,"id":"s1","label":"Atcmd","name":"Atcmd","pass":8,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:00","fail":0,"label":"All Tests","pass":6,"skip":0}],[],[{"elapsed":"00:00:00","fail":0,"id":"s1","label":"Atcmd","name":"Atcmd","pass":6,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1730363701233;
+window.output["baseMillis"] = 1730368812849;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 147;
+window.output["generated"] = 214;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
