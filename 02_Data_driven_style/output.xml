@@ -1,104 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.12 on darwin)" generated="2024-10-31T12:00:12.839011" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.12 on darwin)" generated="2024-11-01T11:07:56.053155" rpa="false" schemaversion="5">
 <suite id="s1" name="Atcmd" source="/Users/amerilain/Documents/ICT_docs/3rd_year/Robot_Framework/Exercises/solutions/02_Data_driven_style/atcmd.robot">
-<test id="s1-t1" name="Connection Test" line="7">
+<test id="s1-t1" name="Connection Test" line="8">
 <kw name="Send Text Template">
 <kw name="Send Text" owner="AtCommandLibrary">
 <arg>${text}</arg>
-<status status="PASS" start="2024-10-31T12:00:12.958971" elapsed="0.012995"/>
+<status status="PASS" start="2024-11-01T11:07:56.098011" elapsed="0.025326"/>
 </kw>
 <kw name="Response Should Be" owner="AtCommandLibrary">
 <arg>SENT="${expected_response}"</arg>
-<status status="PASS" start="2024-10-31T12:00:12.973136" elapsed="0.002167"/>
+<status status="PASS" start="2024-11-01T11:07:56.123739" elapsed="0.000292"/>
 </kw>
 <arg>AT</arg>
 <arg>AT</arg>
-<status status="PASS" start="2024-10-31T12:00:12.955053" elapsed="0.020941"/>
+<status status="PASS" start="2024-11-01T11:07:56.097631" elapsed="0.026471"/>
 </kw>
-<status status="PASS" start="2024-10-31T12:00:12.951445" elapsed="0.026097"/>
+<status status="PASS" start="2024-11-01T11:07:56.097150" elapsed="0.027109"/>
 </test>
-<test id="s1-t2" name="Only Letters" line="8">
+<test id="s1-t2" name="Only Letters" line="9">
 <kw name="Send Text Template">
 <kw name="Send Text" owner="AtCommandLibrary">
 <arg>${text}</arg>
-<status status="PASS" start="2024-10-31T12:00:12.983568" elapsed="0.001248"/>
+<status status="PASS" start="2024-11-01T11:07:56.124979" elapsed="0.000123"/>
 </kw>
 <kw name="Response Should Be" owner="AtCommandLibrary">
 <arg>SENT="${expected_response}"</arg>
-<status status="PASS" start="2024-10-31T12:00:12.985496" elapsed="0.001505"/>
+<status status="PASS" start="2024-11-01T11:07:56.125175" elapsed="0.001139"/>
 </kw>
 <arg>this is a test</arg>
 <arg>THIS IS A TEST</arg>
-<status status="PASS" start="2024-10-31T12:00:12.981848" elapsed="0.005641"/>
+<status status="PASS" start="2024-11-01T11:07:56.124690" elapsed="0.001675"/>
 </kw>
-<status status="PASS" start="2024-10-31T12:00:12.979077" elapsed="0.009214"/>
+<status status="PASS" start="2024-11-01T11:07:56.124436" elapsed="0.002047"/>
 </test>
-<test id="s1-t3" name="Only Numbers" line="9">
+<test id="s1-t3" name="Only Numbers" line="10">
 <kw name="Send Text Template">
 <kw name="Send Text" owner="AtCommandLibrary">
 <arg>${text}</arg>
-<status status="PASS" start="2024-10-31T12:00:12.992606" elapsed="0.000964"/>
+<status status="PASS" start="2024-11-01T11:07:56.127074" elapsed="0.000124"/>
 </kw>
 <kw name="Response Should Be" owner="AtCommandLibrary">
 <arg>SENT="${expected_response}"</arg>
-<status status="PASS" start="2024-10-31T12:00:12.994122" elapsed="0.001664"/>
+<status status="PASS" start="2024-11-01T11:07:56.127275" elapsed="0.000871"/>
 </kw>
 <arg>1234567890</arg>
 <arg>1234567890</arg>
-<status status="PASS" start="2024-10-31T12:00:12.991190" elapsed="0.005092"/>
+<status status="PASS" start="2024-11-01T11:07:56.126875" elapsed="0.001317"/>
 </kw>
-<status status="PASS" start="2024-10-31T12:00:12.989439" elapsed="0.007656"/>
+<status status="PASS" start="2024-11-01T11:07:56.126637" elapsed="0.001663"/>
 </test>
-<test id="s1-t4" name="Mixed Letters and Numbers" line="10">
+<test id="s1-t4" name="Mixed Letters and Numbers" line="11">
 <kw name="Send Text Template">
 <kw name="Send Text" owner="AtCommandLibrary">
 <arg>${text}</arg>
-<status status="PASS" start="2024-10-31T12:00:13.001878" elapsed="0.001299"/>
+<status status="PASS" start="2024-11-01T11:07:56.129285" elapsed="0.000189"/>
 </kw>
 <kw name="Response Should Be" owner="AtCommandLibrary">
 <arg>SENT="${expected_response}"</arg>
-<status status="PASS" start="2024-10-31T12:00:13.003811" elapsed="0.001474"/>
+<status status="PASS" start="2024-11-01T11:07:56.129580" elapsed="0.000900"/>
 </kw>
 <arg>test123test</arg>
 <arg>TEST123TEST</arg>
-<status status="PASS" start="2024-10-31T12:00:13.000378" elapsed="0.005423"/>
+<status status="PASS" start="2024-11-01T11:07:56.128986" elapsed="0.001565"/>
 </kw>
-<status status="PASS" start="2024-10-31T12:00:12.998243" elapsed="0.008399"/>
+<status status="PASS" start="2024-11-01T11:07:56.128635" elapsed="0.002061"/>
 </test>
-<test id="s1-t5" name="Whitespace and Tabs" line="11">
+<test id="s1-t5" name="Whitespace and Tabs" line="12">
 <kw name="Send Text Template">
 <kw name="Send Text" owner="AtCommandLibrary">
 <arg>${text}</arg>
-<status status="PASS" start="2024-10-31T12:00:13.011945" elapsed="0.001006"/>
+<status status="PASS" start="2024-11-01T11:07:56.131500" elapsed="0.000145"/>
 </kw>
 <kw name="Response Should Be" owner="AtCommandLibrary">
 <arg>SENT="${expected_response}"</arg>
-<status status="PASS" start="2024-10-31T12:00:13.013518" elapsed="0.001442"/>
+<status status="PASS" start="2024-11-01T11:07:56.131717" elapsed="0.001152"/>
 </kw>
 <arg>this${SPACE}is${SPACE}a${SPACE}test</arg>
 <arg>THIS IS A TEST</arg>
-<status status="PASS" start="2024-10-31T12:00:13.010101" elapsed="0.005333"/>
+<status status="PASS" start="2024-11-01T11:07:56.131169" elapsed="0.001743"/>
 </kw>
-<status status="PASS" start="2024-10-31T12:00:13.007921" elapsed="0.008298"/>
+<status status="PASS" start="2024-11-01T11:07:56.130871" elapsed="0.002147"/>
 </test>
-<test id="s1-t6" name="Special Characters" line="12">
+<test id="s1-t6" name="Special Characters" line="13">
 <kw name="Send Text Template">
 <kw name="Send Text" owner="AtCommandLibrary">
 <arg>${text}</arg>
-<status status="PASS" start="2024-10-31T12:00:13.022188" elapsed="0.001042"/>
+<status status="PASS" start="2024-11-01T11:07:56.133810" elapsed="0.000184"/>
 </kw>
 <kw name="Response Should Be" owner="AtCommandLibrary">
 <arg>SENT="${expected_response}"</arg>
-<status status="PASS" start="2024-10-31T12:00:13.023845" elapsed="0.004852"/>
+<status status="PASS" start="2024-11-01T11:07:56.134088" elapsed="0.001027"/>
 </kw>
 <arg>hello, world!</arg>
 <arg>HELLOX WORLDX</arg>
-<status status="PASS" start="2024-10-31T12:00:13.020601" elapsed="0.008927"/>
+<status status="PASS" start="2024-11-01T11:07:56.133480" elapsed="0.001704"/>
 </kw>
-<status status="PASS" start="2024-10-31T12:00:13.018505" elapsed="0.011859"/>
+<status status="PASS" start="2024-11-01T11:07:56.133169" elapsed="0.002170"/>
 </test>
 <doc>Data-driven tests for AT command communication with Raspberry Pi Pico</doc>
-<status status="PASS" start="2024-10-31T12:00:12.848919" elapsed="0.185866"/>
+<status status="PASS" start="2024-11-01T11:07:56.054327" elapsed="0.081479"/>
 </suite>
 <statistics>
 <total>
