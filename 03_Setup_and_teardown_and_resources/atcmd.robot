@@ -1,27 +1,32 @@
 *** Settings ***
 Documentation     Data-driven tests for AT command communication with Raspberry Pi Pico
-Library           AtCommandLibrary.py    /dev/cu.usbmodem1101
-Suite Setup       Set echo    ON
-Suite Teardown    Set echo    OFF
+Resource          AtCommandLibrary.resource
+Library           AtCommandLibrary.py    /dev/tty.usbmodem1101
 
-*** Test Cases ***              Input             Expected Response
-Connection Test                 AT                AT    
-Only Letters                    this is a test    THIS IS A TEST
-Only Numbers                    1234567890        1234567890
-Mixed Letters and Numbers       test123test       TEST123TEST
-Whitespace and Tabs             this is a test    THIS IS A TEST
-Special Characters              hello, world!     HELLOX WORLDX
+Suite Setup       Initialize Device
+Suite Teardown    Restore Device State
 
-*** Keywords ***
-Send Text Template
-    [Arguments]    ${text}    ${expected_response}
-    Send text    ${text}
-    Response should be    ${expected_response}
+*** Test Cases ***
+Connection Test
+    [Template]    Send Text Template
+    AT            OK
 
-Set echo
-    [Arguments]    ${status}
-    Set echo    ${status}
+Only Letters
+    [Template]    Send Text Template
+    this is a test    THIS IS A TEST
 
-Check echo status
-    [Arguments]    ${expected_status}
-    Check echo status    ${expected_status}
+Only Numbers
+    [Template]    Send Text Template
+    1234567890        1234567890
+
+Mixed Letters and Numbers
+    [Template]    Send Text Template
+    test123test       TEST123TEST
+
+Whitespace and Tabs
+    [Template]    Send Text Template
+    this${SPACE}is${SPACE}a${SPACE}test    THIS IS A TEST
+
+Special Characters
+    [Template]    Send Text Template
+    hello, world!     HELLOX WORLDX
