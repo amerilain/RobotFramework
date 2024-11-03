@@ -5,28 +5,12 @@ Library           AtCommandLibrary.py    /dev/tty.usbmodem1101
 
 Suite Setup       Initialize Device
 Suite Teardown    Restore Device State
+Test Template     Send Text Template
 
-*** Test Cases ***
-Connection Test
-    [Template]    Send Text Template
-    AT            OK
-
-Only Letters
-    [Template]    Send Text Template
-    this is a test    THIS IS A TEST
-
-Only Numbers
-    [Template]    Send Text Template
-    1234567890        1234567890
-
-Mixed Letters and Numbers
-    [Template]    Send Text Template
-    test123test       TEST123TEST
-
-Whitespace and Tabs
-    [Template]    Send Text Template
-    this${SPACE}is${SPACE}a${SPACE}test    THIS IS A TEST
-
-Special Characters
-    [Template]    Send Text Template
-    hello, world!     HELLOX WORLDX
+*** Test Cases ***              Input               Expected Response
+Connection Test                 AT                  AT
+Only Letters                    this is a test      THIS IS A TEST
+Only Numbers                    1234567890          1234567890
+Mixed Letters and Numbers       test123test         TEST123TEST
+Whitespace and Tabs             this${SPACE}is${SPACE}a${SPACE}test    THIS IS A TEST
+Special Characters              hello, world!       HELLOX WORLDX
