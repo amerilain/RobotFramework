@@ -1,17 +1,30 @@
-*** Keywords ***
-Initialize Device
-    [Documentation]    Sets up the device connection and disables echo.
-    Set Echo    OFF
-    ${response}=    Send Text    AT
-    Run Keyword If    '${response}' == 'SENT="AT"' or '${response}' == 'OK'    Log    Initialization successful with response: ${response}
-    Run Keyword If    '${response}' != 'SENT="AT"' and '${response}' != 'OK'    Fail    Unexpected response during initialization: ${response}
 
-Restore Device State
-    [Documentation]    Restores the device echo setting to ON.
-    Set Echo    ON
+*** Settings ***
+Library             AtCommandLibrary.py         ${COM_PORT}
 
-Send Text Template
-    [Arguments]    ${text}    ${expected_response}
-    ${response}=    Send Text    ${text}
-    Run Keyword If    '${response}'.startswith('SENT=')    Set Test Variable    ${expected_response}    ${response}
-    Should Be Equal    ${response}    ${expected_response}
+***Keywords***
+Suite setup
+    Send command            AT
+    Response should be      AT
+    Response should be      OK
+    Send command            ATE0
+    Response should be      ATE0
+    Response should be      OK
+    Check echo status       OFF
+
+Suite teardown
+    Send command            ATE1
+    Response should be      OK
+    Check echo status       ATE
+    Response should be      ON
+
+Send text to Pico
+	[Arguments]		        ${command}		${response}
+	Send text  				${command}
+	Response should be		SENT="${response}"
+	Response should be		OK
+
+Check echo status
+    [Arguments]         ${expected_status}
+    Send command            ATE
+    Response should be      ${expected_status}

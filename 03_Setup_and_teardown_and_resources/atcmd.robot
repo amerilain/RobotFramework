@@ -1,11 +1,15 @@
 *** Settings ***
-Documentation     Data-driven tests for AT command communication with Raspberry Pi Pico
-Resource          AtCommandLibrary.resource
-Library           AtCommandLibrary.py    /dev/tty.usbmodem1101
+Documentation     Example of morse transmitter test
+...
+...               Change this example to use data driven style 
+...               Test with different texts and speeds
+Suite Setup			Suite setup
+Suite Teardown		Suite teardown
+Test Template		Send text to Pico
+Resource			AtCommandLibrary.resource
 
-Suite Setup       Initialize Device
-Suite Teardown    Restore Device State
-Test Template     Send Text Template
+*** Variables ***
+${COM_PORT}         /dev/tty.usbmodem144201
 
 *** Test Cases ***              Input               Expected Response
 Connection Test                 AT                  AT
