@@ -9,7 +9,7 @@ Test Template		Send text to Pico
 Resource			AtCommandLibrary.resource
 
 *** Variables ***
-${COM_PORT}         /dev/tty.usbmodem144201
+${COM_PORT}         /dev/tty.usbmodem1101
 
 *** Test Cases ***              Input               Expected Response
 Connection Test                 AT                  AT
