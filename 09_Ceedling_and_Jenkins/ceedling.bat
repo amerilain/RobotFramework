@@ -1,0 +1,1 @@
+docker run --rm -v %cd%:/project throwtheswitch/madsciencelab /bin/sh -c "ceedling test:all"
