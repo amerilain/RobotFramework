@@ -10,7 +10,7 @@ Test Teardown       Stop Container
 *** Variables ***
 ${LOGIN URL}        http://localhost:3000
 ${BROWSER}          Chrome
-@{CAR MAKES}        Toyota    Honda    Ford    BMW    Nissan
+@{CAR MAKES}        Toyota    Skoda    Audi
 @{CAR MODELS}       Corolla    Civic    Focus    Altima    3-Series
 ${MILEAGE MIN}      1000
 ${MILEAGE MAX}      100000
@@ -18,15 +18,14 @@ ${YEAR MIN}         2000
 ${YEAR MAX}         2023
 
 *** Test Cases ***
-Car Dealer Full Test
+Remove All Skodas Test
+    [Documentation]    This test adds 10 random cars, removes all Skodas, and verifies none exist.
     Open Car Dealer Website
-    Add Multiple Random Cars    3
-    Add Random Car With Plate    ABC-123
-    Add Multiple Random Cars    2
-    Capture Page Screenshot    screenshots/after_cars_added.png
-    Remove Car By Plate    ABC-123
-    Verify Car Not Present    ABC-123
-    Capture Page Screenshot    screenshots/after_car_removed.png
+    Add Multiple Random Cars With Makes    10
+    Capture Page Screenshot    screenshots2/after_adding_10_cars.png
+    Remove All Cars By Make    Skoda
+    Verify Cars Not Present By Make    Skoda
+    Capture Page Screenshot    screenshots2/after_removing_skodas.png
     Close Application
 
 *** Keywords ***
@@ -52,12 +51,13 @@ Generate Random Plate
     ${plate} =      Set Variable    ${letters}-${numbers}
     Return From Keyword    ${plate}
 
-Add Multiple Random Cars
+Add Multiple Random Cars With Makes
     [Arguments]    ${count}
+    [Documentation]    Adds multiple random cars with specified makes.
     FOR    ${index}    IN RANGE    ${count}
         ${make} =      Evaluate    random.choice(${CAR MAKES})    modules=random
         ${model} =     Evaluate    random.choice(${CAR MODELS})    modules=random
-        ${mileage} =    Evaluate    random.randint(${MILEAGE MIN}, ${MILEAGE MAX})    modules=random
+        ${mileage} =   Evaluate    random.randint(${MILEAGE MIN}, ${MILEAGE MAX})    modules=random
         ${year} =      Evaluate    random.randint(${YEAR MIN}, ${YEAR MAX})    modules=random
         ${plate} =     Generate Random Plate
         Add New Car    ${make}    ${model}    ${mileage}    ${year}    ${plate}
@@ -71,15 +71,21 @@ Add Random Car With Plate
     ${year} =      Evaluate    random.randint(${YEAR MIN}, ${YEAR MAX})    modules=random
     Add New Car    ${make}    ${model}    ${mileage}    ${year}    ${plate}
 
-Remove Car By Plate
-    [Arguments]    ${plate}
-    Wait Until Page Contains Element    xpath=//div[div/span[contains(text(),"Plate")]/following-sibling::span[contains(text(),"${plate}")]]
-    Open Context Menu    xpath=//div[div/span[contains(text(),"Plate")]/following-sibling::span[contains(text(),"${plate}")]]
-    Handle Alert    ACCEPT
+Remove All Cars By Make
+    [Arguments]    ${make}
+    [Documentation]    Removes all cars of the specified make.
+    FOR    ${index}    IN RANGE    100    # Arbitrary high range to loop until no Skodas remain
+        ${element_exists}=    Run Keyword And Return Status    Page Should Contain Element    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
+        Exit For Loop If    not ${element_exists}
+        Open Context Menu    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
+        Handle Alert    ACCEPT
+        Sleep    1s
+    END
 
-Verify Car Not Present
-    [Arguments]    ${plate}
-    Page Should Not Contain Element    xpath=//div[div/span[contains(text(),"Plate")]/following-sibling::span[contains(text(),"${plate}")]]
+Verify Cars Not Present By Make
+    [Arguments]    ${make}
+    [Documentation]    Verifies that no cars of the specified make are present.
+    Page Should Not Contain Element    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
 
 Close Application
     Close Browser
