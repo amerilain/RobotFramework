@@ -63,18 +63,9 @@ Add Multiple Random Cars With Makes
         Add New Car    ${make}    ${model}    ${mileage}    ${year}    ${plate}
     END
 
-Add Random Car With Plate
-    [Arguments]    ${plate}
-    ${make} =      Evaluate    random.choice(${CAR MAKES})    modules=random
-    ${model} =     Evaluate    random.choice(${CAR MODELS})    modules=random
-    ${mileage} =    Evaluate    random.randint(${MILEAGE MIN}, ${MILEAGE MAX})    modules=random
-    ${year} =      Evaluate    random.randint(${YEAR MIN}, ${YEAR MAX})    modules=random
-    Add New Car    ${make}    ${model}    ${mileage}    ${year}    ${plate}
-
 Remove All Cars By Make
     [Arguments]    ${make}
-    [Documentation]    Removes all cars of the specified make.
-    FOR    ${index}    IN RANGE    100    # Arbitrary high range to loop until no Skodas remain
+    FOR    ${index}    IN RANGE    10
         ${element_exists}=    Run Keyword And Return Status    Page Should Contain Element    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
         Exit For Loop If    not ${element_exists}
         Open Context Menu    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
@@ -84,7 +75,6 @@ Remove All Cars By Make
 
 Verify Cars Not Present By Make
     [Arguments]    ${make}
-    [Documentation]    Verifies that no cars of the specified make are present.
     Page Should Not Contain Element    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
 
 Close Application
