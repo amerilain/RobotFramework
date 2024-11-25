@@ -21,6 +21,7 @@ ${YEAR MAX}         2023
 Remove All Skodas Test
     [Documentation]    This test adds 10 random cars, removes all Skodas, and verifies none exist.
     Open Car Dealer Website
+    Wait Until Element Is Visible    locator=link=Add a car    timeout=10s
     Add Multiple Random Cars With Makes    10
     Capture Page Screenshot    screenshots2/after_adding_10_cars.png
     Remove All Cars By Make    Skoda
@@ -38,6 +39,7 @@ Add New Car
     [Arguments]    ${make}    ${model}    ${mileage}    ${year}    ${plate}
     Wait Until Element Is Visible    locator=link=Add a car    timeout=10s
     Click Link    Add a car
+    Wait Until Element Is Visible    id=make-input    timeout=10s
     Input Text    id=make-input    ${make}
     Input Text    id=model-input   ${model}
     Input Text    id=mileage-input    ${mileage}
@@ -65,11 +67,12 @@ Add Multiple Random Cars With Makes
 
 Remove All Cars By Make
     [Arguments]    ${make}
-    FOR    ${index}    IN RANGE    10
+    ${element_exists}=    Set Variable    ${True}
+    WHILE    ${element_exists}
         ${element_exists}=    Run Keyword And Return Status    Page Should Contain Element    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
-        Exit For Loop If    not ${element_exists}
-        Open Context Menu    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
-        Handle Alert    ACCEPT
+        Run Keyword If    ${element_exists}    Open Context Menu    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
+        Run Keyword If    ${element_exists}    Handle Alert    ACCEPT
+        Run Keyword If    ${element_exists}    Wait Until Keyword Succeeds    10s    1s    Run Keyword And Ignore Error    Page Should Not Contain Element    xpath=//div[div/span[contains(text(),"Make")]/following-sibling::span[contains(text(),"${make}")]]
         Sleep    1s
     END
 

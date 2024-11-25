@@ -20,6 +20,7 @@ ${YEAR MAX}         2023
 *** Test Cases ***
 Car Dealer Full Test
     Open Car Dealer Website
+    Wait Until Element Is Visible    locator=link=Add a car    timeout=10s
     Add Multiple Random Cars    3
     Add Random Car With Plate    ABC-123
     Add Multiple Random Cars    2
