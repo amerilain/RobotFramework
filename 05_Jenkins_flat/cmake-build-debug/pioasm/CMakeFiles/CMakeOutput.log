@@ -1,0 +1,221 @@
+The system is: Linux - 6.10.14-linuxkit - aarch64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/build/cmake-build-debug/pioasm/CMakeFiles/3.24.4/CompilerIdCXX/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_54a90/fast && make[3]: Entering directory '/home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp'
+make[3]: Warning: File 'Makefile' has modification time 0.003 s in the future
+/usr/bin/make  -f CMakeFiles/cmTC_54a90.dir/build.make CMakeFiles/cmTC_54a90.dir/build
+make[4]: Entering directory '/home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp'
+make[4]: Warning: File 'CMakeFiles/cmTC_54a90.dir/progress.make' has modification time 0.0037 s in the future
+Building CXX object CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+Target: aarch64-alpine-linux-musl
+Configured with: /home/buildozer/aports/main/gcc/src/gcc-12-20220924/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=aarch64-alpine-linux-musl --host=aarch64-alpine-linux-musl --target=aarch64-alpine-linux-musl --enable-checking=release --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,d,objc,go,fortran,ada --with-arch=armv8-a --with-abi=lp64 --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 12.2.1_git20220924-r4'
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_54a90.dir/'
+ /usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_54a90.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a -mlittle-endian -mabi=lp64 -version -o /tmp/cchoLPoE.s
+GNU C++17 (Alpine 12.2.1_git20220924-r4) version 12.2.1 20220924 (aarch64-alpine-linux-musl)
+	compiled by GNU C version 12.2.1 20220924, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1
+ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/aarch64-alpine-linux-musl
+ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/backward
+ /usr/include/fortify
+ /usr/include
+ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/include
+End of search list.
+GNU C++17 (Alpine 12.2.1_git20220924-r4) version 12.2.1 20220924 (aarch64-alpine-linux-musl)
+	compiled by GNU C version 12.2.1 20220924, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 61ecc39acb8bcab3ec3e0e7fe4ca5696
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_54a90.dir/'
+ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/bin/as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchoLPoE.s
+GNU assembler version 2.39 (aarch64-alpine-linux-musl) using BFD version (GNU Binutils) 2.39
+COMPILER_PATH=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/bin/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_54a90
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54a90.dir/link.txt --verbose=1
+/usr/bin/c++  -v CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_54a90 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/lto-wrapper
+Target: aarch64-alpine-linux-musl
+Configured with: /home/buildozer/aports/main/gcc/src/gcc-12-20220924/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=aarch64-alpine-linux-musl --host=aarch64-alpine-linux-musl --target=aarch64-alpine-linux-musl --enable-checking=release --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,d,objc,go,fortran,ada --with-arch=armv8-a --with-abi=lp64 --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 12.2.1_git20220924-r4'
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) 
+COMPILER_PATH=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/bin/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_54a90' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_54a90.'
+ /usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/collect2 -plugin /usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpBHAiO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-musl-aarch64.so.1 -X -EL -maarch64linux -pie -z now -o cmTC_54a90 /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtbeginS.o -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1 -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../.. CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtendS.o /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_54a90' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_54a90.'
+make[4]: warning:  Clock skew detected.  Your build may be incomplete.
+make[4]: Leaving directory '/home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp'
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory '/home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1]
+    add: [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/aarch64-alpine-linux-musl]
+    add: [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/backward]
+    add: [/usr/include/fortify]
+    add: [/usr/include]
+    add: [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1] ==> [/usr/include/c++/12.2.1]
+  collapse include dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/aarch64-alpine-linux-musl] ==> [/usr/include/c++/12.2.1/aarch64-alpine-linux-musl]
+  collapse include dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/backward] ==> [/usr/include/c++/12.2.1/backward]
+  collapse include dir [/usr/include/fortify] ==> [/usr/include/fortify]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  collapse include dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/include] ==> [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/include]
+  implicit include dirs: [/usr/include/c++/12.2.1;/usr/include/c++/12.2.1/aarch64-alpine-linux-musl;/usr/include/c++/12.2.1/backward;/usr/include/fortify;/usr/include;/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_54a90/fast && make[3]: Entering directory '/home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp']
+  ignore line: [make[3]: Warning: File 'Makefile' has modification time 0.003 s in the future]
+  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_54a90.dir/build.make CMakeFiles/cmTC_54a90.dir/build]
+  ignore line: [make[4]: Entering directory '/home/build/cmake-build-debug/pioasm/CMakeFiles/CMakeTmp']
+  ignore line: [make[4]: Warning: File 'CMakeFiles/cmTC_54a90.dir/progress.make' has modification time 0.0037 s in the future]
+  ignore line: [Building CXX object CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [Target: aarch64-alpine-linux-musl]
+  ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-12-20220924/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=aarch64-alpine-linux-musl --host=aarch64-alpine-linux-musl --target=aarch64-alpine-linux-musl --enable-checking=release --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ d objc go fortran ada --with-arch=armv8-a --with-abi=lp64 --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 12.2.1_git20220924-r4']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_54a90.dir/']
+  ignore line: [ /usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_54a90.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a -mlittle-endian -mabi=lp64 -version -o /tmp/cchoLPoE.s]
+  ignore line: [GNU C++17 (Alpine 12.2.1_git20220924-r4) version 12.2.1 20220924 (aarch64-alpine-linux-musl)]
+  ignore line: [	compiled by GNU C version 12.2.1 20220924  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1]
+  ignore line: [ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/aarch64-alpine-linux-musl]
+  ignore line: [ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../include/c++/12.2.1/backward]
+  ignore line: [ /usr/include/fortify]
+  ignore line: [ /usr/include]
+  ignore line: [ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (Alpine 12.2.1_git20220924-r4) version 12.2.1 20220924 (aarch64-alpine-linux-musl)]
+  ignore line: [	compiled by GNU C version 12.2.1 20220924  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 61ecc39acb8bcab3ec3e0e7fe4ca5696]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_54a90.dir/']
+  ignore line: [ /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/bin/as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchoLPoE.s]
+  ignore line: [GNU assembler version 2.39 (aarch64-alpine-linux-musl) using BFD version (GNU Binutils) 2.39]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_54a90]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54a90.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_54a90 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/lto-wrapper]
+  ignore line: [Target: aarch64-alpine-linux-musl]
+  ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-12-20220924/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=aarch64-alpine-linux-musl --host=aarch64-alpine-linux-musl --target=aarch64-alpine-linux-musl --enable-checking=release --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ d objc go fortran ada --with-arch=armv8-a --with-abi=lp64 --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 12.2.1_git20220924-r4']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/:/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_54a90' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_54a90.']
+  link line: [ /usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/collect2 -plugin /usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpBHAiO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-musl-aarch64.so.1 -X -EL -maarch64linux -pie -z now -o cmTC_54a90 /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtbeginS.o -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1 -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib -L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../.. CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtendS.o /usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o]
+    arg [/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/aarch64-alpine-linux-musl/12.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccpBHAiO.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-musl-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_54a90] ==> ignore
+    arg [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o]
+    arg [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crti.o]
+    arg [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtbeginS.o]
+    arg [-L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1] ==> dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1]
+    arg [-L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib] ==> dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib]
+    arg [-L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib] ==> dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib]
+    arg [-L/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../..] ==> dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../..]
+    arg [CMakeFiles/cmTC_54a90.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtendS.o]
+    arg [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o]
+  collapse obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+  collapse obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+  collapse obj [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+  collapse library dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1] ==> [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1]
+  collapse library dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib/../lib] ==> [/usr/aarch64-alpine-linux-musl/lib]
+  collapse library dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../../../aarch64-alpine-linux-musl/lib] ==> [/usr/aarch64-alpine-linux-musl/lib]
+  collapse library dir [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;ssp_nonshared;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtbeginS.o;/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1/crtendS.o;/usr/lib/crtn.o]
+  implicit dirs: [/usr/lib/gcc/aarch64-alpine-linux-musl/12.2.1;/usr/aarch64-alpine-linux-musl/lib;/usr/lib;/lib]
+  implicit fwks: []
+
+

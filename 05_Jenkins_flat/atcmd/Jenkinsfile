@@ -1,0 +1,20 @@
+pipeline {
+  agent { label 'pico-build' }
+  stages {
+    stage('Start Docker Compose') {
+      steps {
+        sh 'docker compose up'
+      }
+    }
+    stage('Run OpenOCD') {
+      steps {
+        sh '/opt/homebrew/bin/openocd -s /opt/homebrew/Cellar/open-ocd/0.12.0_1/share/openocd/scripts/ -f board/pico-debug.cfg -c "tcl_port disabled" -c "gdb_port disabled" -c "program \"cmake-build-debug/atcmd.elf\"" -c "reset" -c "shutdown"'
+      }
+    }
+    stage('Run Robot Framework Tests') {
+      steps {
+        sh 'robot --variable COM_PORT:/dev/tty.usbmodem1101 robot_tests/atcmd.robot'
+      }
+    }
+  }
+}
